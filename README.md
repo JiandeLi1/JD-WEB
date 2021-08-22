@@ -69,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # JD-WEB
+This is a practice for using styled-components to make a responsive website. <br />
+
+#### Package used:
+styled-components <br />
+
+#### Useful tool (website):
+https://bennettfeely.com/ , helping me to make make some good looking effet as clip-path. <br />
