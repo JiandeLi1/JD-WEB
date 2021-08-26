@@ -35,6 +35,7 @@ const MenuItem = styled.li`
  font-size: 20px;
  color:gray;
  font-weight: 700;
+ cursor: pointer;
 `;
 
 const Button = styled.button`
