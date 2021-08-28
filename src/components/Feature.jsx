@@ -7,10 +7,18 @@ const Container = styled.div`
     display:flex;
     align-items: center;
     height:100vh;
+    @media only screen and (max-width: 480px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 const Left = styled.div`
     height: 100%;
     width: 50%;
+    @media only screen and (max-width: 480px){
+        display: none;
+    }
 `
 const Image = styled.img`
     margin-top: 5vh;
@@ -19,6 +27,9 @@ const Image = styled.img`
 
 const Right = styled.div`
     width: 50%;
+     @media only screen and (max-width: 480px){
+         width: 80%;
+     }
 `
 
 const Title = styled.span`
@@ -42,6 +53,9 @@ const Button = styled.button`
     border: none;
     border-radius: 5px;
     outline: none;
+     @media only screen and (max-width: 480px){
+        background-color:#2d61f1;
+     }
 `
 
 export default function Feature() {

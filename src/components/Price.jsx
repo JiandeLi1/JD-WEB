@@ -8,6 +8,9 @@ const Container = styled.div`
    align-items: center;
    width: 100vw;
    height: 100vh;
+   @media only screen and (max-width: 480px){
+       flex-direction: column;
+   }
 `
 const item1 = [
     "200 hand-Crafted Templates",

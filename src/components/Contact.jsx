@@ -14,6 +14,9 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width:480px){
+        flex-direction: column;
+    }
 
 `
 const FormContainer = styled.div`
@@ -22,6 +25,10 @@ const FormContainer = styled.div`
 const Form = styled.div`
     display:flex;
     justify-content: space-around;
+    @media only screen and (max-width:480px){
+        flex-direction: column;
+        align-items: center;
+    }
 `
 const Title = styled.h1`
     height: 100px;
@@ -34,6 +41,9 @@ const FormLeft = styled.div`
 const FormInput = styled.input`
     margin-top: 20px;
     padding:5px 10px;
+    @media only screen and (max-width:480px){
+        margin-top: 10px;
+    }
 `
 const FormRight = styled.div`
     display:flex;
@@ -44,6 +54,9 @@ const FormRight = styled.div`
 const FormText = styled.textarea`
    margin: 120px 0 20px 0;
    height: 75px;
+   @media only screen and (max-width:480px){
+        margin: 20px 0 20px 0;
+    }
 
 `
 const FormButton = styled.button`
@@ -55,6 +68,9 @@ const FormButton = styled.button`
     color:white;
     border: none;
     border-radius: 5px;
+    @media only screen and (max-width:480px){
+        margin: auto;
+    }
 `
 const AddressContainer = styled.div`
     display:flex;
@@ -63,6 +79,12 @@ const AddressContainer = styled.div`
     width: 50%;
     height: 230px;
     padding-left: 100px;
+    @media only screen and (max-width:480px){
+        padding-left: 0;
+        align-items: center;
+        width:100%;
+        height:20%
+    }
 `
 const Item = styled.div`
     font-size: 20px;

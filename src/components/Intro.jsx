@@ -6,6 +6,11 @@ const Container = styled.div`
     height: calc(100vh - 50px);
     display: flex;
     padding: 20px;
+    @media only screen and (max-width:480px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 const Left = styled.div`
     display: flex;
@@ -13,21 +18,39 @@ const Left = styled.div`
     justify-content: center;
     align-items: center;
     width: 60%;
+    @media only screen and (max-width:480px){
+        width: 100%;
+        height: 100%;
+    }
 `
 const Title = styled.h1`
     width:60%;
     font-size:60px;
     padding:20px 0;
+    @media only screen and (max-width:480px){
+        font-size:50px;
+        width: 100%;
+    }
 `
 const Desc = styled.p`
     width:60%;
     font-size:20px;
+    @media only screen and (max-width:480px){
+        font-size:18px;
+        width: 100%;
+    }
 `
 const Info = styled.div`
   display:flex;
   justify-content: space-between;
   width: 60%;
   padding:30px 0;
+  @media only screen and (max-width:480px){
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 `
 const Button = styled.button`
     padding:10px;
@@ -39,6 +62,10 @@ const Button = styled.button`
     border-radius: 5px;
     outline:none;
     cursor: pointer;
+    @media only screen and (max-width:480px){
+        margin-bottom: 10px;
+        background-color:#2d61f1;
+    }
 `
 
 const Contact = styled.div`
@@ -48,6 +75,10 @@ const Contact = styled.div`
 const Phone = styled.span`
   font-weight: bold;
   color:orange;
+  @media only screen and (max-width:480px){
+        color:#2d61f1;
+        text-align: center;
+    }
 `
 
 const ContactText = styled.span`
@@ -58,6 +89,9 @@ const ContactText = styled.span`
 const Right = styled.div`
     margin: auto;
     width: 40%;
+    @media only screen and (max-width:480px) {
+        display: none;
+    }
 `
 const Image = styled.img`
     width: 100%;

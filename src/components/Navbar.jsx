@@ -17,11 +17,23 @@ const Left = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 60%;
+
 `;
 
 const Logo = styled.h1`
    font-weight: bold;
    text-decoration: underline orange;
+   @media only screen and (max-width:480px) {
+        font-size: 20px;
+        text-indent:-9999px;
+        &:before{
+           text-indent:0;
+           content: "JD";
+           float:left;
+           text-decoration: underline orange;
+
+        }
+    }
 `;
 
 const Menu = styled.ul`
@@ -29,6 +41,10 @@ const Menu = styled.ul`
     justify-content: space-between;
     width: 70%;
     list-style: none;
+
+    @media only screen and (max-width:480px) {
+        display: none;
+    }
 `;
 
 const MenuItem = styled.li`
@@ -36,6 +52,10 @@ const MenuItem = styled.li`
  color:gray;
  font-weight: 700;
  cursor: pointer;
+
+ @media only screen and (max-width:480px) {
+        font-size: 10px;
+    }
 `;
 
 const Button = styled.button`
@@ -47,6 +67,11 @@ const Button = styled.button`
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  @media only screen and (max-width:480px) {
+        font-size: 10px;
+        border: none;
+        background-color:#2d61f1;
+    }
 `;
 
 
